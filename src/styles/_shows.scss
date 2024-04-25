@@ -1,0 +1,58 @@
+.characters {
+    max-width: 80vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.characters__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.characters__tabs__button {
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px; 
+    background-color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #cc0000; 
+    }
+
+    &--is-active {
+        background-color: #cc0000;
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+.characters__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.character-card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px; 
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 4px;
+}

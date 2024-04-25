@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="src/images/logo.png" alt="Logo One Piece"
+        /></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Personagens</a></li>
+          <li><a href="#">Arcos</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Loja</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bem-vindo ao Mundo de One Piece</h1>
+      </div>
+    </section>
+
+    <section class="characters">
+      <nav class="characters__tabs">
+        <button
+          data-tab-button="chapéu-de-palha"
+          class="characters__tabs__button characters__tabs__button--is-active"
+        >
+          Chapéu de Palha
+        </button>
+        <button data-tab-button="pagina2" class="characters__tabs__button">
+          Página 2
+        </button>
+        <button data-tab-button="pagina3" class="characters__tabs__button">
+         Página 3
+        </button>
+      </nav>
+
+      <div
+        data-tab-id="chapéu-de-palha"
+        class="characters__card-container"
+      >
+        <div class="character-card">
+          <img src="./dist/images/luffy.jpg" alt="Monkey D. Luffy" />
+        </div>
+        <div class="character-card">
+          <img src="./dist/images/zoro.jpg" alt="Roronoa Zoro" />
+        </div>
+        <div class="character-card">
+          <img src="./dist/images/sanji.jpg" alt="Sanji" />
+        </div>
+      </div>
+
+      <div
+        data-tab-id="pagina2"
+        class="characters__card-container hidden"
+      >
+        <div class="character-card">
+            <img src="./dist/images/luffy.jpg" alt="Monkey D. Luffy" />
+          </div>
+
+          <div class="character-card">
+            <img src="./dist/images/sanji.jpg" alt="Sanji" />
+          </div>
+          <div class="character-card">
+            <img src="./dist/images/zoro.jpg" alt="Roronoa Zoro" />
+          </div>
+      </div>
+
+      <div
+        data-tab-id="pagina3"
+        class="characters__card-container hidden"
+      >
+
+          <div class="character-card">
+            <img src="./dist/images/zoro.jpg" alt="Roronoa Zoro" />
+          </div>
+          <div class="character-card">
+            <img src="./dist/images/luffy.jpg" alt="Monkey D. Luffy" />
+          </div>
+          <div class="character-card">
+            <img src="./dist/images/sanji.jpg" alt="Sanji" />
+          </div>
+
+
+    </section>
+
+    <section class="faq">
+        <h2 class="title--small">Perguntas Frequentes sobre One Piece</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que é One Piece?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    One Piece é um famoso mangá e anime criado por Eiichiro Oda. Ele segue as aventuras de Monkey D. Luffy e sua tripulação, os Piratas do Chapéu de Palha, em busca do tesouro lendário conhecido como "One Piece", que concederá a quem o encontrar o título de Rei dos Piratas.
+                </div>
+            </li>
+    
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quantos episódios de One Piece existem?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Até o momento, o anime de One Piece possui mais de 1000 episódios e ainda está em andamento.
+                </div>
+            </li>
+    
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quem são os principais personagens de One Piece?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Além do protagonista Monkey D. Luffy, os principais personagens incluem Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky e Brook, todos membros dos Piratas do Chapéu de Palha.
+                </div>
+            </li>
+    
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Onde posso assistir One Piece?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    One Piece está disponível para streaming em diversas plataformas, incluindo Crunchyroll, Funimation e Netflix, dependendo da região.
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024 One Piece. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="dist/scripts/main.js"></script>
+  </body>
+</html>
